@@ -1,0 +1,22 @@
+  <h1><%= @list.name %></h1>
+  <% @list.bookmark.each do |bookmark| %>
+    <p><%=bookmark.comment%></p>
+  <% end %>
+  <%# <br>
+  <p><strong>Reviews</strong></p>
+  <br>
+  <ul class="list-group">
+    <% @restaurant.reviews.each do |review| %>
+      <%# <li class="list-group-item">
+        <p><%= review.content %></p>
+      <%# </li>
+      <li>
+        <p><%= review.rating %></p>
+      <%# </li>
+    <% end %>
+  <%# </ul>
+  <br>
+<%= link_to 'Ajouter un commentaire', new_restaurant_review_path(@restaurant) %>
+ <%# <%= link_to 'Add a bookmark', new_list_bookmark_path %>
+
+  <%= link_to 'Back to Listes', lists_path %>
