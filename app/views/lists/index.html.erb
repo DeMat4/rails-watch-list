@@ -1,9 +1,10 @@
   <h1>Listes</h1>
   <ul>
     <% @lists.each do |list| %>
-        <li> <%= link_to list.name, lists_path(list) %> </li>
+        <li> <%= link_to list.name, list_path(list) %> </li>
       <% end %>
   </ul>
   <br>
 
-    <%# <%= link_to 'Ajouter un restaurant', new_restaurant_path %>
+<%# <%= link_to 'Ajouter un restaurant', new_restaurant_path %> %>
+
