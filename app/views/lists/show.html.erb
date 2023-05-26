@@ -2,5 +2,5 @@
   <% @list.bookmarks.each do |bookmark| %>
     <p><%=bookmark.comment%></p>
   <% end %>
-
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
   <%= link_to 'Back to Listes', lists_path %>

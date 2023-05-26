@@ -6,7 +6,7 @@ class ListsController < ApplicationController
   end
 
   def show
-    
+
   end
 
   def new
@@ -29,6 +29,6 @@ class ListsController < ApplicationController
   end
 
   def set_params
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :photo)
   end
 end

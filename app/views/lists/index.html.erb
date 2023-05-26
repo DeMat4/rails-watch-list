@@ -2,9 +2,9 @@
   <ul>
     <% @lists.each do |list| %>
         <li> <%= link_to list.name, list_path(list) %> </li>
+        <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
       <% end %>
   </ul>
   <br>
 
-<%# <%= link_to 'Ajouter un restaurant', new_restaurant_path %> %>
-
+<%= link_to 'Add a list', new_list_path %>
